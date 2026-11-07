@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>@ViewData["Title"] · RaceDay</title><link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/></head>
+<body>
+<header class="topbar"><a class="brand" asp-controller="Home" asp-action="Index"><span class="brand-mark">R</span><span>Race<span class="brand-accent">Day</span><small>RACE. MOVE. ACHIEVE.</small></span></a><nav class="nav-main"><a asp-controller="Events" asp-action="Index">Explore events</a>
+@{ var role = Context.Session.GetString("UserRole"); }
+@if(role == "Organiser") { <a asp-controller="Organiser" asp-action="Index">Organiser dashboard</a><a asp-controller="Profile" asp-action="Index">Profile</a> }
+else if(role == "Participant") { <a asp-controller="Participant" asp-action="MyEvents">My events</a><a asp-controller="Participant" asp-action="MyResults">My results</a><a asp-controller="Profile" asp-action="Index">Profile</a> }
+</nav><div class="nav-actions">@if (string.IsNullOrEmpty(role)) { <a class="nav-login" asp-controller="Account" asp-action="Login">Log in</a><a class="btn btn-small" asp-controller="Account" asp-action="Register">Join RaceDay</a> } else { <span class="role-pill">@role</span><form asp-controller="Account" asp-action="Logout" method="post"><button class="nav-logout" type="submit">Log out</button></form> }</div></header>
+<main class="page-shell">
+@if(TempData["Success"] != null) { <div class="alert success">@TempData["Success"]</div> }
+@if(TempData["Error"] != null) { <div class="alert error">@TempData["Error"]</div> }
+@RenderBody()
+</main>
+<footer class="footer"><div class="brand footer-brand"><span class="brand-mark">R</span><span>Race<span class="brand-accent">Day</span><small>EVERY FINISH LINE STARTS SOMEWHERE.</small></span></div><span>© @DateTime.Now.Year RaceDay · Built for the race community</span></footer>
+@await RenderSectionAsync("Scripts", required: false)
+</body></html>
