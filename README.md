@@ -168,7 +168,7 @@ RaceDay is a web-based event management platform developed for the PROG6212 Soft
 
 The platform supports sporting events such as running, walking and cycling events.
 
-1. Project Overview
+## 1. Project Overview
 RaceDay provides two main user roles:
 
 Organisers: Manage sporting events and access event-related information.
@@ -177,7 +177,7 @@ Participants: Browse available events, view event details and manage their event
 
 The application uses a web-based architecture consisting of an ASP.NET Core MVC frontend, a REST API and a Microsoft SQL Server database. Azure Blob Storage is used for image storage, while Docker is used to containerise the application services.
 
-2. Technologies Used
+## 2. Technologies Used
 Technology
 
 Purpose
@@ -222,7 +222,7 @@ GitHub Actions
 
 CI/CD workflow
 
-3. System Architecture
+##3. System Architecture
 RaceDay follows a multi-layer application architecture. Each component performs a specific responsibility and communicates with the other components to provide the application's functionality.
 
 Frontend – ASP.NET Core MVC
@@ -245,8 +245,8 @@ Containerisation – Docker
 
 Docker runs the web application, API and SQL Server as separate services. Docker Compose manages the services and their configuration so that the application can run as an integrated system.
 
-4. Main Application Features
-4.1 Authentication and User Roles
+##4. Main Application Features
+##4.1 Authentication and User Roles
 
 User registration and login.
 
@@ -256,7 +256,7 @@ Role-based navigation.
 
 Access to role-specific application functionality.
 
-4.2 Organiser Interface
+## 4.2 Organiser Interface
 
 The organiser interface provides functionality for managing sporting events.
 
@@ -272,7 +272,7 @@ Event image uploads.
 
 Access to event-related enrolment and result information.
 
-4.3 Participant Interface
+## 4.3 Participant Interface
 
 The participant interface allows users to explore sporting events and manage their participation.
 
@@ -288,7 +288,7 @@ Access personal enrolment information.
 
 View available results.
 
-4.4 Azure Blob Storage
+## 4.4 Azure Blob Storage
 
 Azure Blob Storage provides cloud storage for application images.
 
@@ -296,7 +296,7 @@ Uploaded images are stored in the configured Azure Blob Storage container, while
 
 Security note: Azure connection strings and access keys must be stored securely in environment variables or configuration settings. They must never be committed to GitHub.
 
-5. Database Structure
+## 5. Database Structure
 The application uses Microsoft SQL Server.
 
 The database includes the following tables:
@@ -333,20 +333,29 @@ __EFMigrationsHistory
 
 Tracks Entity Framework database migrations
 
-6. Running the Project with Docker
+## 6. Running the Project with Docker
 <img width="942" height="690" alt="LabVM2329496 - labvmdnsdeuhizve7nya4 southafricanorth cloudapp azure com_3389 - Remote Desktop Connection 2026_11_06 08_33_50" src="https://github.com/user-attachments/assets/aa2aa425-138c-4318-a975-5613304e983f" />
 <img width="964" height="656" alt="PROG PART 2 - ASSIGNMENT - Google Chrome 2026_11_09 08_08_59" src="https://github.com/user-attachments/assets/f56bd699-7417-4dcc-bad5-692e5775c4d4" />
 
-Step 6: Open your website:
+## Step 6: Open your website:
 
 http://localhost:8080?utm_source=chatgpt.com
 
 http://localhost:8081/swagger?utm_source=chatgpt.com
 
-7. API Documentation
+## 7. API Documentation
 RaceDay provides Swagger documentation for exploring and testing available API endpoints.
 
-After starting the applicatio
+After starting the application
+
+## 8. Continuous Integration and Deployment
+The project contains a GitHub Actions workflow:
+
+.github/workflows/dotnet-ci.yml
+
+The workflow is intended to support automated project validation through GitHub Actions.
+
+The successful execution of the workflow should be checked in the repository's Actions tab. The presence of the workflow file alone does not confirm that the CI/CD pipeline has passed.
 
 ### GitHub Actions Screenshot
 Green workflow run: 
