@@ -245,7 +245,56 @@ Containerisation – Docker
 
 Docker runs the web application, API and SQL Server as separate services. Docker Compose manages the services and their configuration so that the application can run as an integrated system.
 
+4. Main Application Features
+4.1 Authentication and User Roles
 
+User registration and login.
+
+Organiser and participant roles.
+
+Role-based navigation.
+
+Access to role-specific application functionality.
+
+4.2 Organiser Interface
+
+The organiser interface provides functionality for managing sporting events.
+
+Features include:
+
+Organiser dashboard.
+
+Event creation and management.
+
+Access to organiser-specific events.
+
+Event image uploads.
+
+Access to event-related enrolment and result information.
+
+4.3 Participant Interface
+
+The participant interface allows users to explore sporting events and manage their participation.
+
+Features include:
+
+Browse available events.
+
+View event information.
+
+Participate in available events through enrolment.
+
+Access personal enrolment information.
+
+View available results.
+
+4.4 Azure Blob Storage
+
+Azure Blob Storage provides cloud storage for application images.
+
+Uploaded images are stored in the configured Azure Blob Storage container, while the application can use their references when displaying images.
+
+Security note: Azure connection strings and access keys must be stored securely in environment variables or configuration settings. They must never be committed to GitHub.
 
 ### GitHub Actions Screenshot
 Green workflow run: 
