@@ -343,6 +343,11 @@ http://localhost:8080?utm_source=chatgpt.com
 
 http://localhost:8081/swagger?utm_source=chatgpt.com
 
+7. API Documentation
+RaceDay provides Swagger documentation for exploring and testing available API endpoints.
+
+After starting the applicatio
+
 ### GitHub Actions Screenshot
 Green workflow run: 
 
