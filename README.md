@@ -162,8 +162,8 @@ in-memory database, so no SQL Server is needed (this is also how CI runs them). 
 installs .NET 8, **validates the repository structure**, restores, builds the solution and
 runs all unit tests.
 
-PROG6212-PART3-AphiweGans
-Race. Move. Achieve.
+## PROG6212-PART3-AphiweGans
+## Race. Move. Achieve.
 RaceDay is a web-based event management platform developed for the PROG6212 Software Development project. The application is designed to connect event organisers and participants through a central platform where sporting events can be explored, managed and joined.
 
 The platform supports sporting events such as running, walking and cycling events.
@@ -222,7 +222,7 @@ GitHub Actions
 
 CI/CD workflow
 
-##3. System Architecture
+## 3. System Architecture
 RaceDay follows a multi-layer application architecture. Each component performs a specific responsibility and communicates with the other components to provide the application's functionality.
 
 Frontend – ASP.NET Core MVC
@@ -245,8 +245,8 @@ Containerisation – Docker
 
 Docker runs the web application, API and SQL Server as separate services. Docker Compose manages the services and their configuration so that the application can run as an integrated system.
 
-##4. Main Application Features
-##4.1 Authentication and User Roles
+## 4. Main Application Features
+## 4.1 Authentication and User Roles
 
 User registration and login.
 
@@ -413,6 +413,13 @@ Docker Compose validation: docker compose config --quiet
 
 Additional functional testing should cover authentication, role-based navigation, event management, participant enrolment, image uploads and database operations.
 
+## 12. Conclusion
+
+RaceDay demonstrates the development of a web-based sporting event management platform using modern software development technologies.
+
+By combining ASP.NET Core MVC, REST API services, SQL Server, Azure Blob Storage and Docker, the project brings together application development, database management, cloud storage and containerisation in one integrated solution.
+
+## RaceDay – Race. Move. Achieve.
 
 
 ### GitHub Actions Screenshot
