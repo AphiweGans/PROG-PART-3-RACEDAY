@@ -399,6 +399,21 @@ RaceDay.Tests
 
 Automated tests
 
+## 11. Testing and Verification
+
+The application can be checked using the following services:
+
+Website: http://localhost:8080
+
+Swagger: http://localhost:8081/swagger
+
+Docker containers: docker ps
+
+Docker Compose validation: docker compose config --quiet
+
+Additional functional testing should cover authentication, role-based navigation, event management, participant enrolment, image uploads and database operations.
+
+
 
 ### GitHub Actions Screenshot
 Green workflow run: 
