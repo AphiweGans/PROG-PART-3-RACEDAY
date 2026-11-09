@@ -1,4 +1,4 @@
-# RaceDay - PROG6212 PoE Part 3 (RESTful API)
+# RaceDay - PROG6212 PoE Part 3 
 
 RaceDay is an event management system for the road running, walking and cycling
 community. This repository contains the Part 1 planning documents (`docs/`) and
@@ -221,6 +221,31 @@ API documentation and testing
 GitHub Actions
 
 CI/CD workflow
+
+3. System Architecture
+RaceDay follows a multi-layer application architecture. Each component performs a specific responsibility and communicates with the other components to provide the application's functionality.
+
+Frontend – ASP.NET Core MVC
+
+The MVC application provides the user interface. Users interact with the website through its pages, forms and navigation. It allows organisers and participants to access functionality according to their roles.
+
+Backend – ASP.NET Core Web API
+
+The REST API processes application requests, handles business logic and communicates with the database. The MVC frontend sends requests to the API to retrieve or submit application information.
+
+Database – Microsoft SQL Server
+
+SQL Server stores the application's information, including users, organisers, participants, events, categories, enrolments and results.
+
+Cloud Storage – Azure Blob Storage
+
+Azure Blob Storage is used to store uploaded images separately from the application's database. The application can retrieve and display images using their stored references.
+
+Containerisation – Docker
+
+Docker runs the web application, API and SQL Server as separate services. Docker Compose manages the services and their configuration so that the application can run as an integrated system.
+
+
 
 ### GitHub Actions Screenshot
 Green workflow run: 
