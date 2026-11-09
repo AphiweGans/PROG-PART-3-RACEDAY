@@ -333,6 +333,10 @@ __EFMigrationsHistory
 
 Tracks Entity Framework database migrations
 
+6. Running the Project with Docker
+<img width="942" height="690" alt="LabVM2329496 - labvmdnsdeuhizve7nya4 southafricanorth cloudapp azure com_3389 - Remote Desktop Connection 2026_11_06 08_33_50" src="https://github.com/user-attachments/assets/aa2aa425-138c-4318-a975-5613304e983f" />
+
+
 ### GitHub Actions Screenshot
 Green workflow run: 
 
