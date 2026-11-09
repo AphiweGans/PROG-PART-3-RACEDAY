@@ -357,6 +357,24 @@ The workflow is intended to support automated project validation through GitHub 
 
 The successful execution of the workflow should be checked in the repository's Actions tab. The presence of the workflow file alone does not confirm that the CI/CD pipeline has passed.
 
+## 9. Security Considerations
+
+The project uses several security-related practices:
+
+Authentication for application users.
+
+Role-based access to application functionality.
+
+Password hashing rather than storing plain-text passwords.
+
+Secure handling of Azure Storage credentials.
+
+Database access through the backend API.
+
+Environment-based configuration for sensitive settings.
+
+Actual security controls should be verified against the implemented application before submission.
+
 ### GitHub Actions Screenshot
 Green workflow run: 
 
