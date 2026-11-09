@@ -335,7 +335,11 @@ Tracks Entity Framework database migrations
 
 6. Running the Project with Docker
 <img width="942" height="690" alt="LabVM2329496 - labvmdnsdeuhizve7nya4 southafricanorth cloudapp azure com_3389 - Remote Desktop Connection 2026_11_06 08_33_50" src="https://github.com/user-attachments/assets/aa2aa425-138c-4318-a975-5613304e983f" />
+<img width="964" height="656" alt="PROG PART 2 - ASSIGNMENT - Google Chrome 2026_11_09 08_08_59" src="https://github.com/user-attachments/assets/f56bd699-7417-4dcc-bad5-692e5775c4d4" />
 
+Step 6. Open your website:
+http://localhost:8080?utm_source=chatgpt.com
+http://localhost:8081/swagger?utm_source=chatgpt.com
 
 ### GitHub Actions Screenshot
 Green workflow run: 
